@@ -1,7 +1,7 @@
 
 # Compromised Pt. II: Judgement Day
 
-Companion script to Compromised Pt. I: Investigation (https://github.com/nxkennedy/compromised). Compares list of breached accounts to AD dump of 'Last Password Change' dates.
+Companion script to Compromised Pt. I: Investigation (https://github.com/nxkennedy/compromised). Compares list of breached accounts to Active Directory dump of 'Last Password Change' dates.
 
 <table>
     <tr>
