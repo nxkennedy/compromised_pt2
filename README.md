@@ -34,7 +34,7 @@ Determine if an account is highly susceptible to a password replay attack becaus
     ruby compromised_judgment.rb <pwned-emails*.csv> <ActiveDirectory-dump.csv>
 
 ## Input
-* The script assumes your input file is in the below format, including headers and particularly the date format. If input is not like below, you will have to modify the script accordingly to read your input.
+* The script assumes your input file is in the below format (produced by Amplitude Analytics tool), including headers and particularly the date format. The "LoginUserStatus" is a helpful code that determines if the account is currently active vs inactive. If input is not like below, you will have to modify the script accordingly to read your input. 
 
 <table>
  <tr>
@@ -64,7 +64,7 @@ I wanted the terminal output formatted in a criminal court theme. Here's what th
 !['compromised' script terminal screenshot](screenshots/compromised_judgement-output.png)
 
 ### CSV
-The "ResetRequired" column will be flagged with an "x" if a reset is required for the account
+The "ResetRequired" column will be flagged with an "x" if a reset is required for the account. The "Status" column is just a human readable format of the "LoginUserStatus" codes above. 
 
 <table>
  <tr>
@@ -96,7 +96,3 @@ The "ResetRequired" column will be flagged with an "x" if a reset is required fo
   <td>x</td>
  </tr>
 </table>
-
-## TODO
-- [x] Format output (w/ banner)
-- [ ] Make script modular
